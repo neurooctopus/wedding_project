@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лена и Костя — 18 апреля 2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --accent: #a78f78;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f6f2ec; /* тёплый крем */
+      color: #1e1e1e;
+      line-height: 1.6;
+    }
+
+    section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    h1,
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 44px;
+      letter-spacing: 0.04em;
+    }
+
+    h2 {
+      font-size: 32px;
+      color: var(--accent);
+    }
+
+    p {
+      font-size: 17px;
+      margin: 0 0 14px;
+      letter-spacing: 0.02em;
+    }
+
+    .divider {
+      margin: 20px auto;
+      width: 40px;
+      height: 1px;
+      background: #ccc;
+      opacity: 0.4;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 26px;
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      text-decoration: none; /* ВАЖНО */
+      color: var(--accent);
+      font-size: 15px;
+      letter-spacing: 0.04em;
+    }
+
+    a.button:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    form {
+      text-align: left;
+      margin-top: 32px;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      background: #fff;
+    }
+
+    .options label {
+      margin-top: 8px;
+      font-weight: normal;
+    }
+
+    button {
+      margin-top: 32px;
+      padding: 12px 24px;
+      background: none;
+      border: 1px solid #1e1e1e;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .photo--hero {
+      max-width: 520px;
+      margin: 0 auto 32px;
+      padding: 0 24px;
+    }
+
+    .photo--hero img {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .subtitle {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #777;
+    }
+
+    footer {
+      padding: 32px 24px;
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+    }
+
+    .survey {
+      /* используем общий стиль section (max-width + центрирование) */
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .survey h2 {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .survey p {
+      color: #6f6a63;
+      margin-bottom: 24px;
+    }
+
+    .survey-button {
+      display: inline-block;
+      padding: 14px 32px;
+      background-color: #d8c8b6; /* теплый беж */
+      color: #2b2b2b;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 999px;
+      transition: all 0.25s ease;
+    }
+
+    .survey-button:hover {
+      background-color: #cbb9a5;
+      transform: translateY(-2px);
+    }
+
+    .contacts {
+      /* тоже выравниваем по центру, как остальные секции */
+      text-align: center;
+      margin: 0 auto 32px;
+    }
+
+    .contacts p {
+      color: #6f6a63;
+      margin-bottom: 24px;
+    }
+
+    .contacts-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .contacts-box img {
+      width: 180px;
+      height: auto;
+      border-radius: 12px;
+      background: #fff;
+      padding: 12px;
+    }
+
+    .chat-link {
+      color: #8a6f54;
+      font-size: 18px;
+      text-decoration: underline;
+    }
+
+    /* Небольшая доадаптация для совсем маленьких экранов */
+    @media (max-width: 480px) {
+      section {
+        padding: 28px 16px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+
+      .photo--hero {
+        padding: 0 16px;
+        margin-bottom: 24px;
+      }
+
+      .survey-button {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h1>Лена и Костя</h1>
+    <p class="subtitle">Мы женимся</p>
+    <p>и зовём отметить с нами</p>
+  </section>
+
+  <div class="photo--hero">
+    <img src="couple.jpg" alt="Лена и Костя" />
+  </div>
+
+  <div class="divider"></div>
+
+  <section>
+    <h2>Когда и где</h2>
+    <p>Петербург</p>
+    <p><strong>18 апреля 2026</strong></p>
+   
+    <div class="photo--hero">
+      <img src="registry.jpg" alt="Дворец бракосочетания №2" />
+    </div>
+
+    <p>Сначала роспись</p>
+    <p>В 11:30</p>
+    <p>Дворец бракосочетания №2</p>
+    <p>Фурштатская, 52</p>
+    <a
+      class="button"
+      href="https://yandex.ru/maps/?text=Фурштатская%2052%20Санкт-Петербург"
+      target="_blank"
+    >
+      Открыть на карте
+    </a>
+    <div class="divider"></div>
+    <div class="photo--hero">
+      <img src="venue.jpg" alt="Место проведения" />
+    </div>
+
+
+    <p>Потом посиделки</p>
+    <p>В 16 или 17 (скажем позже)</p>
+    <p>Ресторан Laganaci</p>
+    <p>Итальянская, 8</p>
+    <a
+      class="button"
+      href="https://yandex.ru/maps/-/CPQo5M8E"
+      target="_blank"
+    >
+      Открыть на карте
+    </a>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <h2>Дресс-код</h2>
+    <p>Без лишнего официоза: <br />приходите так, как вам будет комфортно веселиться</p>
+    
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <h2>Подарки</h2>
+    <p>Не переживайте за это, конверты будут в тему!<br /> И ради бога, откажитесь от цветов — лучше замените на вино</p>
+    
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Блок с анкетой -->
+  <section class="survey">
+    <h2>Подтвердите в анкете, что придёте</h2>
+    <p>Пожалуйста, заполните небольшую анкету до 10 марта — это поможет нам всё спланировать 💛</p>
+
+    <a
+      href="https://forms.gle/1MXmDEH8fU6mKHfU7"
+      target="_blank"
+      class="survey-button"
+    >
+      К анкете
+    </a>
+  </section>
+
+  <section class="contacts">
+    <h2>Контакты</h2>
+    <p>Обязательно добавьтесь в чат,<br /> чтобы быть на связи 🤍</p>
+
+    <div class="contacts-box">
+      <img src="qr.png" alt="QR-код чата" />
+
+      <a
+        href="https://t.me/+Vty8wCeFDwZjZGYy
+        target="_blank"
+        class="chat-link"
+      >
+        Перейти в чат
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>До встречи 18 апреля 🤍<br />Лена и Костя</p>
+    <div class="photo--hero">
+      <img src="couple2.jpg" alt="Лена и Костя" />
+    </div>
+  </footer>
+
+</body>
+</html>
